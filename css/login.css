@@ -7,6 +7,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 24px 16px;
 }
 
 .card {
@@ -18,27 +19,62 @@ body {
   max-width: 360px;
 }
 
+/* Versão mais larga para o cadastro */
+.card--wide {
+  max-width: 460px;
+}
+
 h1 {
   font-size: 22px;
-  margin-bottom: 24px;
+  margin-bottom: 4px;
   text-align: center;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #777;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Fieldsets */
+fieldset {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+legend {
+  font-size: 12px;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0 6px;
 }
 
 label {
   display: block;
   font-size: 14px;
   margin-bottom: 4px;
+  margin-top: 12px;
   color: #333;
 }
 
+fieldset label:first-of-type {
+  margin-top: 0;
+}
+
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="text"] {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
-  margin-bottom: 16px;
+  margin-bottom: 0;
 }
 
 input:focus {
@@ -55,6 +91,7 @@ button {
   border-radius: 4px;
   font-size: 15px;
   cursor: pointer;
+  margin-top: 4px;
 }
 
 button:hover { background: #52494e; }
@@ -68,3 +105,21 @@ button:hover { background: #52494e; }
 }
 
 .msg.success { color: green; }
+
+/* Link de alternância login ↔ cadastro */
+.link-alt {
+  margin-top: 16px;
+  font-size: 13px;
+  text-align: center;
+  color: #555;
+}
+
+.link-alt a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link-alt a:hover {
+  text-decoration: underline;
+}
