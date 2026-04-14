@@ -12,9 +12,10 @@ document.getElementById('produtoForm').addEventListener('submit', function(e) {
   const nome = document.getElementById('nomeProduto').value.trim();
   const categoria = document.getElementById('categoria').value.trim();
   const quantidade = document.getElementById('quantidade').value;
-  const preco = document.getElementById('preco').value;
+  const precoCusto = document.getElementById('precoCusto').value;
+  const precoVenda = document.getElementById('precoVenda').value;
 
-  if (!codigo || !nome || !categoria || !quantidade || !preco) {
+  if (!codigo || !nome || !categoria || !quantidade || !precoCusto || !precoVenda) {
     mostrarMsg('Preencha todos os campos.');
     return;
   }
@@ -24,7 +25,8 @@ document.getElementById('produtoForm').addEventListener('submit', function(e) {
     nome,
     categoria,
     quantidade,
-    preco
+    precoCusto,
+    precoVenda
   };
 
   console.log('Produto:', payload);
