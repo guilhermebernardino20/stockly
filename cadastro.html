@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stockly — Cadastro</title>
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+
+<div class="card card--wide">
+  <h1>Stockly</h1>
+  <p class="subtitle">Crie sua conta</p>
+
+  <form id="cadastroForm" novalidate>
+
+    <fieldset>
+      <legend>Dados pessoais</legend>
+
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome" placeholder="João da Silva" />
+
+      <label for="cpf">CPF</label>
+      <input type="text" id="cpf" placeholder="000.000.000-00" maxlength="14" />
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" placeholder="voce@exemplo.com" />
+
+      <label for="telefone">Telefone</label>
+      <input type="text" id="telefone" placeholder="(00) 00000-0000" maxlength="15" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Dados do negócio</legend>
+
+      <label for="nomeNegocio">Nome do negócio</label>
+      <input type="text" id="nomeNegocio" placeholder="Ex: Boutique da Maria" />
+
+      <label for="cnpj">CNPJ / CPF do negócio</label>
+      <input type="text" id="cnpj" placeholder="00.000.000/0000-00" maxlength="18" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Senha de acesso</legend>
+
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" placeholder="Mínimo 8 caracteres" />
+
+      <label for="confirmarSenha">Confirmar senha</label>
+      <input type="password" id="confirmarSenha" placeholder="Repita a senha" />
+    </fieldset>
+
+    <button type="submit">Criar conta</button>
+  </form>
+
+  <p class="msg" id="msg"></p>
+
+  <p class="link-alt">Já tem conta? <a href="index.html">Entrar</a></p>
+</div>
+
+<script src="js/cadastro.js"></script>
+</body>
+</html>
